@@ -45,11 +45,11 @@
       <form action="" method="post">
         <label
           >Celsius:
-          <input name="cel" size="5" type="text" />
+          <input name="cel" size="5" type="number" id="outputCelcius" />
         </label>
         <label
           >Fahrenheit:
-          <input name="far" size="5" type="text" />
+          <input name="far" size="5" type="number" id= "inputFahrenheit" oninput= "temperatureConverter(this.value)" onchange="temperatureConverter(this.value)"/>
         </label>
       </form>
     </div>
@@ -67,6 +67,13 @@
         property. See the demo below.
       </p>
       <img src="images/hw-converter.gif" alt="" />
+
+      <script>
+          function temperatureConverter(valNum) {
+              valNum = parseFloat(valNum);
+              document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+          }
+      </script>
     </div>
   </body>
 </html>
