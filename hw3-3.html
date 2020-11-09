@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>hw3-3</title>
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.2rem;
+      }
+      div {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .cards img {
+        margin: 15px 20px 0;
+      }
+      .result {
+        font-size: 1.5rem;
+        color: red;
+        font-weight: bold;
+      }
+      button {
+        width: 150px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="center">Another Blackjack</h1>
+    <div class="center">
+      <div class="cards">
+        <img alt="card-1" height="200" src="images/cards/green_back.png" />
+        <img alt="card-2" height="200" src="images/cards/green_back.png" />
+        <img alt="card-3" height="200" src="images/cards/green_back.png" />
+        <p class="result">You are Not Busted!</p>
+        <button>Hit</button>
+      </div>
+    </div>
+
+    <!-- You can remove the instructions below -->
+    <div class="instruction">
+      <p>
+        In this version of Blackjack, the player always deals three cards. When
+        the button is clicked, the page should be updated replacing the three
+        cards with three random cards facing up. The card images for each
+        value/shape are inside <em>'images/cards'</em> folder. When player's hand (the
+        sum of three cards' values) exceeds 21, the paragraph above button
+        should show <strong>"You are Busted!"</strong>, otherwise it should show
+        <strong>
+          "You are Not Busted!" </strong
+        >. The value of cards two through ten is their pip value (2 through 10).
+        Face cards (Jack, Queen, and King) are all worth <strong>10</strong>. To
+        simplify this game, Ace is worth <strong>1</strong>.
+      </p>
+    </div>
+  </body>
+</html>
